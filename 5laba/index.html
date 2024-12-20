@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Файловый менеджер</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">Вариант 8</h1>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <form class="search-form" aria-label="Поиск">
+                <input type="search" class="search" placeholder="Поиск" aria-label="Поле для поиска">
+            </form>
+            <nav>
+                <ul class="menu" aria-label="Главное меню">
+                    <li><a href="#" aria-label="Все файлы">Все файлы</a></li>
+                    <li><a href="#" aria-label="Избранные">Избранные</a></li>
+                    <li><a href="#" aria-label="Корзина">Корзина</a></li>
+                </ul>
+            </nav>
+            <footer class="footer">
+                <p>&copy; Вариант 8.<br>Пискунов Михаил,<br>группа АИ-22-1</p>
+            </footer>
+        </aside>
+
+        <main class="content">
+            <section aria-labelledby="file-section-title">
+                <header>
+                    <h2 id="file-section-title">Ваши файлы</h2>
+                    <div class="filters">
+                        <button class="filter-btn active" aria-pressed="true">Все типы</button>
+                        <button class="filter-btn" aria-pressed="false">PDF</button>
+                        <button class="filter-btn" aria-pressed="false">DOC</button>
+                        <button class="filter-btn" aria-pressed="false">XLS</button>
+                        <button class="filter-btn" aria-pressed="false">PNG</button>
+                        <div class="sort-dropdown">
+                            <button class="sort-btn" aria-haspopup="true">По умолчанию</button>
+                            <ul class="sort-menu" aria-label="Сортировка файлов">
+                                <li><a href="#" aria-label="Сортировка по умолчанию">По умолчанию</a></li>
+                                <li><a href="#" aria-label="Сначала новые">Сначала новые</a></li>
+                                <li><a href="#" aria-label="Сначала старые">Сначала старые</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="file-list" aria-label="Список файлов">
+                    <article class="file-item pdf" aria-label="PDF файл">
+                        <div class="file-icon" aria-hidden="true">PDF</div>
+                        <div class="file-info">
+                            <h3>Супер важный PDF-файл с расписанием на 2023 год</h3>
+                            <p>Создал: Пискунов Михаил</p>
+                            <p>Последнее изменение: 13 марта 2023 года</p>
+                        </div>
+                    </article>
+
+                    <article class="file-item doc" aria-label="DOC файл">
+                        <div class="file-icon" aria-hidden="true">DOC</div>
+                        <div class="file-info">
+                            <h3>Критерии оценки на экзамене в 2023 году</h3>
+                            <p>Создал: Пискунов Михаил</p>
+                            <p>Последнее изменение: 13 февраля 2023 года</p>
+                        </div>
+                    </article>
+
+                    <article class="file-item xls" aria-label="XLS файл">
+                        <div class="file-icon" aria-hidden="true">XLS</div>
+                        <div class="file-info">
+                            <h3>Табличка со списком покупок</h3>
+                            <p>Создал: Пискунов Михаил</p>
+                            <p>Последнее изменение: 13 декабря 2023 года</p>
+                        </div>
+                    </article>
+
+                    <article class="file-item png" aria-label="PNG файл">
+                        <div class="file-icon" aria-hidden="true">PNG</div>
+                        <div class="file-info">
+                            <h3>Фотка с отпуска, в который я так хочу вернуться...</h3>
+                            <p>Создал: Пискунов Михаил</p>
+                            <p>Последнее изменение: 8 июня 2023 года</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
